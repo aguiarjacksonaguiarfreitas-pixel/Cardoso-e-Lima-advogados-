@@ -15,9 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","name":"Cardoso & Lima Advogados","telephone":"+5586994788032","email":"cardosolimaadvogadosassociados@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Avenida São Sebastião, 2176, Pindorama","addressLocality":"Parnaíba","addressRegion":"PI","postalCode":"64204-035","addressCountry":"BR"},"sameAs":["https://www.instagram.com/cardosolimaadvogados/"]}</script>
 <style>
-:root{--navy:#232719;--gold:#B79A65;--paper:#F8F7F3;--ink:#30343A;--bg:var(--paper);--text:var(--ink);--line:rgba(16,29,43,.15);--serif:"Cormorant Garamond",Georgia,serif;--sans:Inter,system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14170F;--text:#D9D8D3;--line:rgba(248,247,243,.15);color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#14170F;--text:#D9D8D3;--line:rgba(248,247,243,.15);color-scheme:dark}
+:root{--navy:#5C1A1A;--gold:#C9AA72;--paper:#F8F7F3;--ink:#30343A;--bg:var(--paper);--text:var(--ink);--line:rgba(16,29,43,.15);--serif:"Cormorant Garamond",Georgia,serif;--sans:Inter,system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1C0E0E;--text:#D9D8D3;--line:rgba(248,247,243,.15);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1C0E0E;--text:#D9D8D3;--line:rgba(248,247,243,.15);color-scheme:dark}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
 body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.7 var(--sans)}
@@ -61,14 +61,15 @@ nav .btn{padding:9px 16px;font-size:.8rem}
 .arealist p{margin:0;color:#c9ccd0}
 .note{border:1px dashed var(--gold);padding:28px;max-width:62ch;color:#c9ccd0;margin:0}
 .contact{background:#EEECE3;color:var(--ink)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .contact{background:#232719;color:#D9D8D3}}
-:root[data-theme="dark"] .contact{background:#232719;color:#D9D8D3}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .contact{background:#5C1A1A;color:#D9D8D3}}
+:root[data-theme="dark"] .contact{background:#5C1A1A;color:#D9D8D3}
 .contact p.lead{max-width:48ch;margin:24px 0 32px}
 .info{border-top:1px solid var(--line);margin-top:48px}
 .info dl{display:grid;grid-template-columns:150px 1fr;gap:14px 24px;margin:0 0 36px}
 .info dt{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:600;padding-top:4px}
 .info dd{margin:0;overflow-wrap:anywhere}
 .disc{font-size:.9rem;opacity:.85;max-width:62ch}
+#pedido label{display:block;font-size:.85rem;margin:18px 0 6px}#pedido input{width:100%;padding:13px 14px;border:1px solid var(--line);background:transparent;color:inherit;font:inherit;border-radius:0}#pedido button{cursor:pointer;margin-top:26px;background:var(--gold);color:var(--navy)}
 footer{background:var(--navy);color:#c9ccd0;padding:56px 0 40px;font-size:.9rem}
 footer .row{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
 footer b{font:600 1.15rem var(--serif);letter-spacing:.2em;color:var(--paper);display:block;margin-bottom:8px}
@@ -115,7 +116,7 @@ nav ul{flex-direction:column;align-items:flex-start;gap:16px}
 <p class="sub">Conheça o escritório, entenda as possibilidades do seu caso e entre em contato para conversar sobre sua necessidade jurídica.</p>
 <div class="btns">
 <a class="btn solid" href="#escritorio">Conheça o escritório</a>
-<a class="btn line wa" href="#" target="_blank" rel="noopener">Fale com o escritório</a>
+<a class="btn line wa" href="#" target="_blank" rel="noopener">Solicitar atendimento</a>
 </div>
 </div>
 </section>
@@ -158,13 +159,22 @@ nav ul{flex-direction:column;align-items:flex-start;gap:16px}
 <div class="wrap">
 <p class="eyebrow">Contato</p>
 <h2>Vamos entender a sua necessidade jurídica.</h2>
-<p class="lead">Entre em contato com o escritório para apresentar sua dúvida e verificar as possibilidades de atendimento.</p>
+<p class="lead">Entre em contato com o escritório para apresentar sua dúvida e verificar as possibilidades de atendimento. A eventual contratação dos serviços é combinada diretamente com o escritório, depois dessa conversa.</p>
 <div class="btns">
 <a class="btn solid wa" href="#" target="_blank" rel="noopener">Iniciar conversa no WhatsApp</a>
 <a class="btn line" href="mailto:cardosolimaadvogadosassociados@gmail.com">Enviar e-mail</a>
 <a class="btn line" href="https://www.instagram.com/cardosolimaadvogados/" target="_blank" rel="noopener">Instagram</a>
 <a class="btn line" id="maps" href="#" target="_blank" rel="noopener">Ver no Google Maps</a>
 </div>
+<form id="pedido" style="margin-top:56px;max-width:560px">
+<h3 style="font-size:1.8rem">Solicitar atendimento</h3>
+<p class="disc">Informe apenas o necessário e não envie detalhes confidenciais do caso: eles ficam para a conversa com o escritório. Os dados abaixo servem só para montar a mensagem de WhatsApp enviada ao escritório; este site não os armazena.</p>
+<label for="nome">Seu nome</label>
+<input id="nome" name="nome" required autocomplete="name">
+<label for="assunto">Assunto, em poucas palavras</label>
+<input id="assunto" name="assunto" required maxlength="120">
+<button class="btn" type="submit">Enviar pelo WhatsApp</button>
+</form>
 <div class="info">
 <h3 style="font-size:1.8rem;margin:36px 0 24px">Cardoso & Lima Advogados</h3>
 <dl>
@@ -240,6 +250,13 @@ if (ARTIGOS.length) {
 } else {
   ar.append(el("p", "disc", "Os artigos informativos serão publicados aqui depois de revisados pelo escritório. Todo conteúdo trará aviso de que não substitui a análise individual de um advogado."));
 }
+
+document.getElementById("pedido").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = new FormData(e.target);
+  const msg = "Olá! Conheci o escritório Cardoso & Lima pelo site e gostaria de solicitar atendimento jurídico.\nNome: " + f.get("nome") + "\nAssunto: " + f.get("assunto");
+  window.open("https://wa.me/5586994788032?text=" + encodeURIComponent(msg), "_blank", "noopener");
+});
 
 const hd = document.getElementById("top"), nav = document.getElementById("nav"), mb = document.querySelector(".menu");
 const onScroll = () => hd.classList.toggle("solid", scrollY > 40 || nav.classList.contains("open"));
